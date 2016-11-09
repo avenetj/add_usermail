@@ -43,7 +43,7 @@ else
 		checkEtcPasswd=$?
 			
 		ls /home/$username 1>/dev/null
-		checkUserHome 1>/dev/null
+		checkUserHome=$?
 		
 		if [ "$checkEtcPasswd" == "0" ] && [ "$checkUserHome == "0" ]; then
 			printf "\nEverything seems to be alright."
